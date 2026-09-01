@@ -19,7 +19,7 @@ function PredictionHistory() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/predictions"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/predictions"
       );
 
       const text = await response.text();

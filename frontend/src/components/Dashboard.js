@@ -71,7 +71,7 @@ function Dashboard({ setPage }) {
   const fetchDashboard = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/dashboard"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/dashboard"
       );
 
       if (!response.ok) {

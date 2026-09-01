@@ -15,7 +15,7 @@ function AppointmentList() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/appointments"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/appointments"
       );
 
       if (!response.ok) {
@@ -47,7 +47,7 @@ function AppointmentList() {
   const updateStatus = async (id, status) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/appointments/${id}`,
+        `https://ai-healthcare-backend-5dud.onrender.com/api/appointments/${id}`,
         {
           method: "PUT",
           headers: {

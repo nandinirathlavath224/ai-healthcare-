@@ -38,7 +38,7 @@ function PatientProfile({
       try {
         const appointmentResponse =
           await fetch(
-            "http://localhost:5000/api/appointments"
+            "https://ai-healthcare-backend-5dud.onrender.com/api/appointments"
           );
 
         if (appointmentResponse.ok) {
@@ -75,7 +75,7 @@ function PatientProfile({
       try {
         const predictionResponse =
           await fetch(
-            "http://localhost:5000/api/predictions"
+            "https://ai-healthcare-backend-5dud.onrender.com/api/predictions"
           );
 
         if (predictionResponse.ok) {
@@ -112,7 +112,7 @@ function PatientProfile({
       try {
         const prescriptionResponse =
           await fetch(
-            "http://localhost:5000/api/prescriptions"
+            "https://ai-healthcare-backend-5dud.onrender.com/api/prescriptions"
           );
 
         if (prescriptionResponse.ok) {

@@ -19,11 +19,11 @@ function AdminDashboard() {
         predictionsResponse,
         prescriptionsResponse,
       ] = await Promise.all([
-        fetch("http://localhost:5000/api/patients"),
-        fetch("http://localhost:5000/api/doctors"),
-        fetch("http://localhost:5000/api/appointments"),
-        fetch("http://localhost:5000/api/predictions"),
-        fetch("http://localhost:5000/api/prescriptions"),
+        fetch("https://ai-healthcare-backend-5dud.onrender.com/api/patients"),
+        fetch("https://ai-healthcare-backend-5dud.onrender.com/api/doctors"),
+        fetch("https://ai-healthcare-backend-5dud.onrender.com/api/appointments"),
+        fetch("https://ai-healthcare-backend-5dud.onrender.com/api/predictions"),
+        fetch("https://ai-healthcare-backend-5dud.onrender.com/api/prescriptions"),
       ]);
 
       const patientsData = await patientsResponse.json();

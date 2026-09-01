@@ -20,8 +20,8 @@ function PrescriptionList() {
 
       const [prescriptionResponse, patientResponse] =
         await Promise.all([
-          fetch("http://localhost:5000/api/prescriptions"),
-          fetch("http://localhost:5000/api/patients"),
+          fetch("https://ai-healthcare-backend-5dud.onrender.com/api/prescriptions"),
+          fetch("https://ai-healthcare-backend-5dud.onrender.com/api/patients"),
         ]);
 
       if (!prescriptionResponse.ok || !patientResponse.ok) {

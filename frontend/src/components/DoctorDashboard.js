@@ -13,9 +13,9 @@ function DoctorDashboard() {
 
       const [patientsResponse, appointmentsResponse, predictionsResponse] =
         await Promise.all([
-          fetch("http://localhost:5000/api/patients"),
-          fetch("http://localhost:5000/api/appointments"),
-          fetch("http://localhost:5000/api/predictions"),
+          fetch("https://ai-healthcare-backend-5dud.onrender.com/api/patients"),
+          fetch("https://ai-healthcare-backend-5dud.onrender.com/api/appointments"),
+          fetch("https://ai-healthcare-backend-5dud.onrender.com/api/predictions"),
         ]);
 
       const patientsData = await patientsResponse.json();

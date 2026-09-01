@@ -6,7 +6,7 @@ function Register() {
   const [password, setPassword] = useState("");
 
   const handleRegister = async () => {
-    const response = await fetch("http://localhost:5000/api/auth/register", {
+    const response = await fetch("https://ai-healthcare-backend-5dud.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

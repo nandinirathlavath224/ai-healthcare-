@@ -18,7 +18,7 @@ function PatientForm({ getPatients }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/patients/add",
+        "https://ai-healthcare-backend-5dud.onrender.com/api/patients/add",
         {
           method: "POST",
           headers: {

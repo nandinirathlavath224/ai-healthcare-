@@ -58,7 +58,7 @@ function SmartAlerts() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/predictions"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/predictions"
       );
 
       if (response.ok) {
@@ -126,7 +126,7 @@ function SmartAlerts() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/appointments"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/appointments"
       );
 
       if (response.ok) {
@@ -236,7 +236,7 @@ function SmartAlerts() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/prescriptions"
+        "https://ai-healthcare-backend-5dud.onrender.com/api/prescriptions"
       );
 
       if (response.ok) {
