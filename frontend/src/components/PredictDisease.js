@@ -428,7 +428,8 @@ function PredictDisease({ setPage }) {
       // =========================================
 
       const response = await fetch(
-        "http://127.0.0.1:5001/predict",
+        "https://ai-healthcare-ml.onrender.com/predict",
+     
         {
           method: "POST",
 
